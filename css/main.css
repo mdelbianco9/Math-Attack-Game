@@ -1,0 +1,20 @@
+
+
+/*Nav Bar*/
+.nav-link{
+	font-family: 'Dosis', sans-serif;
+	font-size: 27px;
+	letter-spacing: 2px;
+}
+
+.bg-green{
+	background-color: #1bff1b;
+}
+
+nav ul li a {
+	color: #fff;
+}
+
+body {
+	background-color: #1bffff;
+}

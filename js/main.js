@@ -27,6 +27,7 @@ answer_box.onkeypress = function(e){
 		var checkAnswer = answer_box.value;
 		if(checkAnswer == answer ){
 			score ++
+			
 		}else{
 			score --
 		}

@@ -24,7 +24,7 @@
 	  </button>
 
 	  <!-- Navbar content -->
-	  <div class="collapse navbar-collapse" id="navbar">
+	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav mr-auto" id="dificulty">
 	      <li class="nav-item active">
 	        <a class="nav-link" href="#" id="easy" >Easy<span class="sr-only">(current)</span></a>
@@ -38,7 +38,10 @@
 	    </ul>
 	    
 	    <ul class="navbar-nav mr-5" id="math-sign">
-		     <li class="nav-item mx-3 active1">
+	    	<li class="nav-item mx-3 nav-link active1">
+		        Pick One->
+		      </li>
+		     <li class="nav-item mx-3">
 		        <a class="nav-link" href="#" id="addition"><i class="fas fa-plus fa-2x"></i></a>
 		      </li>
 		      <li class="nav-item mx-3">
@@ -47,12 +50,12 @@
 		      <li class="nav-item mx-3">
 		        <a class="nav-link" href="#" id="multiplication"><i class="fas fa-times fa-2x"></i></a>
 		      </li>
-		      <li class="nav-item mx-3">
+		      <!-- <li class="nav-item mx-3">
 		        <a class="nav-link" href="#" id="division"><i class="fas fa-divide fa-2x"></i></a>
 		      </li>
 		      <li class="nav-item mx-3">
 		        <a class="nav-link" href="#" id="all">All</a>
-		      </li>
+		      </li> -->
 	    </ul>
 
 	  </div>
@@ -60,7 +63,7 @@
 
 	<!-- Go and Reset Btns -->
 	<div class="go-bar">
-		<h3 class="float-left mt-2 ml-2" id="score">Score:</h3>
+		<h3 class="float-left mt-2 ml-2 text-danger mt-3" id="score">Score:</h3>
 		<button type="button" class="btn btn-go" id="start">GO</button>
 		<button type="button" class="btn btn-reset" id="reset">Reset</button>
 	</div>

@@ -17,7 +17,7 @@ var max_num = 10;
 var num1 = Math.floor((Math.random() * max_num)+1);
 var num2 = Math.floor((Math.random() * max_num)+1);
 
-var answer = num1 + num2;
+var answer;
 
 // Display Numbers
 document.getElementById("number1").innerHTML='';
@@ -27,6 +27,7 @@ document.getElementById("number2").innerHTML='';
 start.addEventListener('click', function(){
 	document.getElementById("number1").innerHTML=num1;
 	document.getElementById("number2").innerHTML=num2;
+	answer_box.focus();
 })
 
 // Reset Button
@@ -76,8 +77,6 @@ for (var i = 0; i < signs.length; i++) {
     current1[0].className = current1[0].className.replace(" active1", "");
     this.className += " active1";
 
-    var children = math_sign.children;
-    console.log(children)
 
     if(this.id === "addition"){
     	answer = num1 + num2;
@@ -127,7 +126,18 @@ answer_box.onkeypress = function(e){
 	var num2 = Math.round((Math.random() * max_num)+1);
 	document.getElementById("number1").innerHTML=num1;
 	document.getElementById("number2").innerHTML=num2;
-	answer = num1 + num2;
+	
+		console.log(answer)
+		if(signs[1].classList.value == "nav-link active1"){
+			answer = num1 + num2;
+		}else if (signs[2].classList.value == "nav-link active1") {
+			answer = num1 - num2;
+		}else if (signs[3].classList.value == "nav-link active1") {
+			answer = num1 * num2;
+		}else if (signs[4].classList.value == "nav-link active1") {
+			answer = num1 / num2;
+		}
+	
 
 	}
 }

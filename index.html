@@ -14,7 +14,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-green">
+    <nav class="navbar navbar-expand-lg navbar-light bg-green" id="navbar">
 
 	  <a class="navbar-brand mr-5" href="#">Math Attack</a>
 
@@ -24,8 +24,8 @@
 	  </button>
 
 	  <!-- Navbar content -->
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav mr-auto">
+	  <div class="collapse navbar-collapse" id="navbar">
+	    <ul class="navbar-nav mr-auto" id="dificulty">
 	      <li class="nav-item active">
 	        <a class="nav-link" href="#" id="easy" >Easy<span class="sr-only">(current)</span></a>
 	      </li>
@@ -37,21 +37,21 @@
 	      </li>
 	    </ul>
 	    
-	    <ul class="navbar-nav mr-5">
-		     <li class="nav-item mx-3">
-		        <a class="nav-link" href="#"><i class="fas fa-plus fa-2x"></i></a>
+	    <ul class="navbar-nav mr-5" id="math-sign">
+		     <li class="nav-item mx-3 active1">
+		        <a class="nav-link" href="#" id="addition"><i class="fas fa-plus fa-2x"></i></a>
 		      </li>
 		      <li class="nav-item mx-3">
-		        <a class="nav-link" href="#"><i class="fas fa-minus fa-2x"></i></a>
+		        <a class="nav-link" href="#" id="subtraction"><i class="fas fa-minus fa-2x"></i></a>
 		      </li>
 		      <li class="nav-item mx-3">
-		        <a class="nav-link" href="#"><i class="fas fa-times fa-2x"></i></a>
+		        <a class="nav-link" href="#" id="multiplication"><i class="fas fa-times fa-2x"></i></a>
 		      </li>
 		      <li class="nav-item mx-3">
-		        <a class="nav-link" href="#"><i class="fas fa-divide fa-2x"></i></a>
+		        <a class="nav-link" href="#" id="division"><i class="fas fa-divide fa-2x"></i></a>
 		      </li>
 		      <li class="nav-item mx-3">
-		        <a class="nav-link" href="#">All</a>
+		        <a class="nav-link" href="#" id="all">All</a>
 		      </li>
 	    </ul>
 
@@ -69,9 +69,9 @@
 
 	<!-- Math Problem -->
    <div class="container">
-   	<div class="row justify-content-center mt-5 bg-danger">
+   	<div class="row justify-content-center mt-5" ">
    		<h1 id="number1" class="d-inline-block num-block m-3"></h1>
-   		<h1 class="d-inline-block mx-3 display-1"> + </h1>
+   		<h1 class="d-inline-block mx-3 display-1" id="display-sign"> + </h1>
     	<h2 class="d-inline-block num-block m-3" id="number2"></h2>
     	<h1 class="d-inline-block mx-3 display-1"> = </h1>
     	<input type="" name="" id="answer" class="d-inline-block num-block m-3 pb-3">

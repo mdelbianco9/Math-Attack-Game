@@ -64,9 +64,13 @@ body {
 	outline: none;
 }
 
+.bg-success {
+	transition: all .01s ease-out;
+}
 
-
-
+.active, .active1 {
+	background-color: yellow;
+}
 
 
 
